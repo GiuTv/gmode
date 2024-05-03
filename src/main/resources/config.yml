@@ -1,0 +1,41 @@
+gma:
+  perms: "gma.use"
+  tootherperms: "gma.use.other"
+  message: "&aYou went in Adventure mode!"
+  messagetoother: "&5You put {target} in Adventure mode!"
+  nopermission: "&cYou don't have permissions!"
+
+gms:
+  perms: "gms.use"
+  tootherperms: "gms.use.other"
+  message: "&aYou went in Survival mode!"
+  messagetoother: "&5You put {target} in Survival mode!"
+  nopermission: "&cYou don't have permissions!"
+
+gmc:
+  perms: "gmc.use"
+  tootherperms: "gmc.use.other"
+  message: "&aYou went in Creative mode!"
+  messagetoother: "&5You put {target} in Creative mode!"
+  nopermission: "&cYou don't have permissions!"
+
+gmsp:
+  perms: "gmsp.use"
+  tootherperms: "gmsp.use.other"
+  message: "&aYou went in Spectator mode!"
+  messagetoother: "&5You put {target} in Spectator mode!"
+  nopermission: "&cYou don't have permissions!"
+
+
+gmode:
+  perms: "gmode.help"
+  nopermission: "&cYou don't have permissions!"
+  help:
+    title: "&7--------------- &5&lGMode &7---------------"
+    gmchelp: "&5/gmode gmc <target> &7| &5/gmc &7- &fPut the target/yourself if target is empty in gamemode Creative!"
+    gmshelp: "&5/gmode gms <target> &7| &5/gms &7- &fPut the target/yourself if target is empty in gamemode Survival!"
+    gmahelp: "&5/gmode gma <target> &7| &5/gma &7- &fPut the target/yourself if target is empty in gamemode Adventure!"
+    gmsphelp: "&5/gmode gmsp <target> &7| &5/gmsp &7- &fPut the target/yourself if target is empty in gamemode Spectator!"
+    gmreloadhelp: "&5/gmode relaod &7- &fUpdate the config of the plugin"
+    gmhelp: "&5/gmode help &7- &fShow this message"
+  reload: "&aPlugin Reloaded Successfuly"

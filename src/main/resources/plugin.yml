@@ -1,0 +1,9 @@
+name: gmode
+version: '${project.version}'
+main: org.giutv.gmode.Gmode
+commands:
+  gma:
+  gms:
+  gmc:
+  gmsp:
+  gmode:
