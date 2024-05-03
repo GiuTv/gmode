@@ -13,7 +13,7 @@ public class gmodecommand extends CommandManager {
     private final Plugin plugin = Gmode.getPlugin(Gmode.class);
 
     public gmodecommand() {
-        super("gmode", null, false);
+        super("gmode", false);
     }
     @Override
     public boolean execute(CommandSender sender, String[] args) {

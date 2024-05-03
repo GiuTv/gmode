@@ -9,7 +9,4 @@ public class Utils {
     public String color(String text){
         return ChatColor.translateAlternateColorCodes('&', text);
     }
-    public String getMessage(String path) {
-        return color(Gmode.getInstance().getConfig().getString(path));
-    }
 }

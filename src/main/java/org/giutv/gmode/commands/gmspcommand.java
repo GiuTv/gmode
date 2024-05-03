@@ -11,7 +11,7 @@ import static org.giutv.gmode.commands.methods.getconf;
 public class gmspcommand extends CommandManager {
 
     public gmspcommand() {
-        super("gmsp", null, false);
+        super("gmsp", false);
     }
     @Override
     public boolean execute(CommandSender sender, String[] args) {

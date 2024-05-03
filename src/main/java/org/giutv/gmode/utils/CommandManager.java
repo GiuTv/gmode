@@ -17,11 +17,9 @@ public abstract class CommandManager implements CommandExecutor {
 
         private final FileConfiguration config = Gmode.getInstance().getConfig();
 
-    public CommandManager(String command, String permissions, boolean useConsole){
+    public CommandManager(String command, boolean useConsole){
         this.command = command;
-        if (permissions != null) {
-            this.permissions = String.valueOf(plugin.getConfig().get(permissions));
-        }
+
         this.useConsole = useConsole;
 
         Gmode.getInstance().getCommand(command).setExecutor(this);
@@ -33,12 +31,6 @@ public abstract class CommandManager implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!useConsole && !(sender instanceof Player)) {
             Bukkit.getLogger().warning("You can't execute this command from console.");
-            return true;
-        }
-
-        if(permissions != null && !sender.hasPermission(permissions)) {
-            String np = Utils.color(config.getString("permissions.messages.nopermission"));
-            sender.sendMessage(Utils.color(np));
             return true;
         }
 
