@@ -1,7 +1,6 @@
 package org.giutv.gmode.commands;
 
 import org.bukkit.Bukkit;
-import org.bukkit.GameMode;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
@@ -13,7 +12,7 @@ public class gmacommand extends CommandManager {
 
     private final Plugin plugin = Gmode.getPlugin(Gmode.class);
 
-    public gmacommand(Gmode plugin) {
+    public gmacommand() {
         super("gma", null, false);
     }
     @Override
@@ -43,7 +42,6 @@ public class gmacommand extends CommandManager {
     }
 
     public String getconf(String conf) {
-        String getcons = plugin.getConfig().getString(conf);
-        return getcons;
+        return plugin.getConfig().getString(conf);
     }
 }

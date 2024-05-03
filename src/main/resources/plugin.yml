@@ -3,7 +3,12 @@ version: '${project.version}'
 main: org.giutv.gmode.Gmode
 commands:
   gma:
+    description: go or put someone in Gamemode Adventure!
   gms:
+    description: go or put someone in Gamemode Survival!
   gmc:
+    description: go or put someone in Gamemode Creative!
   gmsp:
+    description: go or put someone in Gamemode Spectator!
   gmode:
+    description: Use all the commands of the Gmode Plugin!

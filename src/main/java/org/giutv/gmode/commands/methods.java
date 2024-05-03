@@ -1,11 +1,9 @@
 package org.giutv.gmode.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.giutv.gmode.Gmode;
-import org.giutv.gmode.utils.BukkitPlugin;
 import org.giutv.gmode.utils.Utils;
 
 public class methods {
@@ -39,8 +37,7 @@ public class methods {
     }
 
     public static String getconf(String conf) {
-        String getcons = plugin.getConfig().getString(conf);
-        return getcons;
+        return plugin.getConfig().getString(conf);
     }
 
 }
