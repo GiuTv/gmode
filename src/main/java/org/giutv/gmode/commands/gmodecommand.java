@@ -35,6 +35,7 @@ public class gmodecommand extends CommandManager {
                     } else {
                         p.sendMessage(Utils.color(getconf("gma.nopermission")));
                     }
+                    break;
 
 
                 case "gmc":
@@ -48,6 +49,7 @@ public class gmodecommand extends CommandManager {
                     } else {
                         p.sendMessage(Utils.color(getconf("gmc.nopermission")));
                     }
+                    break;
                 case "gms":
                     if (args.length == 2 && args[1] != null && p.hasPermission(getconf("gms.tootherperms"))) {
                         Player target = Bukkit.getPlayer(args[1]);
@@ -59,6 +61,7 @@ public class gmodecommand extends CommandManager {
                     } else {
                         p.sendMessage(Utils.color(getconf("gms.nopermission")));
                     }
+                    break;
 
                 case "gmsp":
                     if (args.length == 2 && args[1] != null && p.hasPermission(getconf("gmsp.tootherperms"))) {
@@ -71,11 +74,14 @@ public class gmodecommand extends CommandManager {
                     } else {
                         p.sendMessage(Utils.color(getconf("gmsp.nopermission")));
                     }
+                    break;
                 case "reload":
                     plugin.reloadConfig();
                     p.sendMessage(Utils.color(getconf("gmode.reload")));
+                    break;
                 default:
                     methods.help(p);
+                    break;
             }
         } else {
             p.sendMessage(Utils.color(getconf("gmode.nopermission")));
